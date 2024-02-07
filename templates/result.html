@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker Result</title>
+</head>
+<body>
+    <h1>Symptom Checker Result</h1>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% else %}
+        <p>Hello {{ patient.name }}!</p>
+        <p>Based on your symptoms, you may have {{ disease.name }}.</p>
+        <p>Suggested Doctors:</p>
+        <ul>
+            {% for doctor in doctors %}
+                <li>{{ doctor.name }} - {% for speciality in doctor.specialties.all %}{{ speciality.name }}, {% endfor %}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
