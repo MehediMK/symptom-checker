@@ -13,7 +13,7 @@ Symptom Checker is a Django web application that helps users identify possible d
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/symptom-checker.git
+   git clone https://github.com/MehediMK/symptom-checker.git
    ```
 
 2. Navigate to the project directory:
