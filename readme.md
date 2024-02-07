@@ -20,6 +20,9 @@ Symptom Checker is a Django web application that helps users identify possible d
 
    ```bash
    cd symptom-checker
+   python -m venv venv
+   source venv/bin/activate (*linux) or venv\Scripts\activate (*Windows)
+   copy "config.py sample" config.py
    ```
 
 3. Install the dependencies:
