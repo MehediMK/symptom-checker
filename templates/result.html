@@ -11,7 +11,7 @@
         <p>{{ message }}</p>
     {% else %}
         <p>Hello {{ patient.name }}!</p>
-        <p>Based on your symptoms, you may have {{ disease.name }}.</p>
+        <p>Based on your symptoms, you may have {% for disease in diseases %}{{disease.name}}, {% endfor %}.</p>
         <p>Suggested Doctors:</p>
         <ul>
             {% for doctor in doctors %}
